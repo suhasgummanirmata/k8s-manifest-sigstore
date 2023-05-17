@@ -1,4 +1,4 @@
-module github.com/suhasgummanirmata/k8s-manifest-sigstore
+module github.com/sigstore/k8s-manifest-sigstore
 
 go 1.18
 
@@ -20,7 +20,6 @@ require (
 	github.com/secure-systems-lab/go-securesystemslib v0.4.0
 	github.com/sigstore/cosign v1.13.1
 	github.com/sigstore/fulcio v0.6.0
-	github.com/sigstore/k8s-manifest-sigstore v0.0.0-00010101000000-000000000000
 	github.com/sigstore/rekor v0.12.1-0.20220915152154-4bb6f441c1b2
 	github.com/sigstore/sigstore v1.5.1
 	github.com/sirupsen/logrus v1.9.0
@@ -309,4 +308,4 @@ require (
 
 // `go install` only works with a project which has no replace for main module in go.mod.
 // So please uncomment the below manually if you are working on a fork repo and if you want to test your local changes.
-replace github.com/sigstore/k8s-manifest-sigstore => ./
+replace github.com/sigstore/k8s-manifest-sigstore => github.com/suhasgummanirmata/k8s-manifest-sigstore v0.4.5-0.20230516063356-a190f5ed2983
